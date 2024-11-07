@@ -1,182 +1,59 @@
+<!--
+    Company Name: Nanoit
+    Project Name: Digency
+    Author: Nanoit
+    Version: 1.0
+    Created: 2024-10-06
+    Description: This is a digital agency website template.
+    License: Your License Information
+-->
+
+<!-- Tourventure Responsive HTML Template -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang='zxx'>
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Agency - We provide the best digital solutions for your business.">
+    <meta name="keywords" content="Digincy Digital Agency, Web Design, SEO, Marketing, Creative Agency">
+    <meta name="author" content="Nanoit">
+    <title>Tourventure - Responsive HTML5 Template</title>
+    <link rel="icon" href="./images/favicon-16x16.png" type="image/x-icon">
 
-    <!-- bootstrap 5 main.css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Digital Agency">
+    <meta property="og:description" content="We provide the best digital solutions for your business.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Agency">
+    <meta name="twitter:description" content="We provide the best digital solutions for your business.">
+    <meta name="twitter:image" content="images/twitter-image.jpg">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fontawesome 6.6.0-->
+    <link rel="stylesheet" href="fonts/all.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-    <title>Digital Agency</title>
-    <style>
-        /* header start */
-        header .nav-container {
-            width: 100%;
-            position: fixed;
-            padding-top: 10px;
-            padding-bottom: 20px;
-            -webkit-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-            z-index: 9999;
-        }
-
-        header .nav-container .navbar-nav .nav-link.active {
-            border-bottom: 2px solid red;
-            color: white;
-        }
-
-        header .nav-container .navbar-light .navbar-brand {
-            color: #fff;
-        }
-
-        header .scrolled {
-            padding: 0;
-            background-color: #fff;
-        }
-
-        header .scrolled .navbar-light .navbar-nav .nav-link {
-            color: black;
-        }
-
-        header .scrolled .navbar-light .navbar-nav .nav-link:hover {
-            color: rgb(89, 84, 84);
-        }
-
-        header .scrolled .navbar-light .navbar-nav .nav-link.active {
-            color: black !important;
-        }
-
-        header .scrolled .navbar-light .navbar-brand {
-            color: black;
-        }
-
-        header .navbar-light .navbar-nav .nav-link {
-            color: #fff;
-        }
-
-        header .navbar-light .navbar-nav .nav-link:hover {
-            color: #beb6b6;
-        }
-
-        header .navbar-light .navbar-toggler {
-            padding: 0.25rem 0.75rem;
-            font-size: 1.25rem;
-            line-height: 1;
-            background-color: white;
-            border: 1px solid transparent;
-            border-radius: 0.25rem;
-            transition: box-shadow .15s ease-in-out;
-        }
-
-        header .navbar-light .navbar-toggler {
-            color: rgb(255, 255, 255);
-            border-color: rgb(255, 255, 255);
-        }
-
-        /* Remove border from toggler */
-        header .navbar-toggler {
-            border: 0 !important;
-        }
-
-        header .navbar-toggler:focus,
-        header .navbar-toggler:active,
-        header .navbar-toggler-icon:focus {
-            outline: none !important;
-            box-shadow: none !important;
-            border: 0 !important;
-        }
-
-        /* Lines of the Toggler */
-        header .toggler-icon {
-            width: 30px;
-            height: 3px;
-            background-color: #e74c3c;
-            display: block;
-            transition: all 0.2s;
-        }
-
-        /* Adds Space between the lines */
-        header .middle-bar {
-            margin: 5px auto;
-        }
-
-        /* State when navbar is opened (START) */
-        header .navbar-toggler .top-bar {
-            transform: rotate(45deg);
-            transform-origin: 10% 10%;
-        }
-
-        header .navbar-toggler .middle-bar {
-            opacity: 0;
-            filter: alpha(opacity=0);
-        }
-
-        header .navbar-toggler .bottom-bar {
-            transform: rotate(-45deg);
-            transform-origin: 10% 90%;
-        }
-
-        /* State when navbar is opened (END) */
-
-        /* State when navbar is collapsed (START) */
-        header .navbar-toggler.collapsed .top-bar {
-            transform: rotate(0);
-        }
-
-        header .navbar-toggler.collapsed .middle-bar {
-            opacity: 1;
-            filter: alpha(opacity=100);
-        }
-
-        header .navbar-toggler.collapsed .bottom-bar {
-            transform: rotate(0);
-        }
-
-        /* State when navbar is collapsed (END) */
-
-        /* Color of Toggler when collapsed */
-        header .navbar-toggler.collapsed .toggler-icon {
-            background-color: #777777;
-        }
-
-        /* header end */
-
-        @media screen and (max-width:991.98px) {
-            header .nav-container {
-                width: 100%;
-                position: fixed;
-                padding-top: 10px;
-                padding-bottom: 20px;
-                -webkit-transition: all 0.4s ease;
-                transition: all 0.4s ease;
-                z-index: 9999;
-                background-color: white;
-            }
-
-            header .nav-container .navbar-nav .nav-link {
-                color: rgb(0, 0, 0);
-            }
-
-            header .nav-container .navbar-nav .nav-link.active {
-                border-bottom: 2px solid red;
-                color: rgb(0, 0, 0);
-            }
-
-            header .nav-container .navbar-light .navbar-brand {
-                color: #000000;
-            }
-        }
-    </style>
     <style>
         .image-container {
             position: relative;
@@ -414,7 +291,6 @@
 
 <body>
 
-
     <header class="header">
         <div class="nav-container">
             <div class="container">
@@ -468,8 +344,6 @@
         </div>
     </header>
 
-
-
     <section class="hero-section">
         <div class="image-container">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -519,19 +393,192 @@
     </section>
 
 
-    <div class="container" style="margin: 120px 0;">
-        <div class="row">
-            <div class="col-sm-6">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel et, saepe accusantium molestias fugit
-                    quasi, rem sint ullam excepturi maxime repellat mollitia odio delectus maiores quibusdam voluptatem
-                    nam, laboriosam voluptatibus.</h2>
-            </div>
-            <div class="col-sm-6">
-                <!-- <img src="images/pexels-photo-11302135.webp" class="img-fluid" alt="" srcset=""> -->
+    <section id="why-choose-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="card py-4 h-100">
+                        <div class="mx-auto">
+                            <img src="images/icons/guide.png" class="img-fluid" style="height: 70px; width: 70px;"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 text-center">2000+ Our worldwide guide</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="card py-4 h-100">
+                        <div class="mx-auto">
+                            <img src="images/icons/trust.png" class="img-fluid" style="height: 70px; width: 70px;"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 text-center">100% trusted travel agency</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="card py-4 h-100">
+                        <div class="mx-auto">
+                            <img src="images/icons/mentor.png" class="img-fluid" style="height: 70px; width: 70px;"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 text-center">10+ year of travel experience</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="card py-4 h-100">
+                        <div class="mx-auto">
+                            <img src="images/icons/happy.png" class="img-fluid" style="height: 70px; width: 70px;"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-3 text-center">90% of our traveller happy</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <style>
+        #tour-guide {
+            padding: 120px 0;
+        }
 
+        #tour-guide .card {
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        #tour-guide .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        #tour-guide .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: background 0.3s ease;
+            padding-left: 90%;
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+        }
+
+        #tour-guide .card:hover .card-img-overlay {
+            opacity: 1;
+        }
+
+        #tour-guide .btn-contact {
+            background-color: #fff;
+            border: none;
+            color: #333;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #tour-guide .social-icon {
+            font-size: 24px;
+            color: #fff;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        #tour-guide .card:hover .social-icon {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+    <section id="tour-guide" style="padding: 120px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xl-4">
+                    <div class="shadow-lg">
+                        <div class="card">
+                            <div class="position-relative">
+                                <div class="w-100" style="height: 300px; width: 100%;">
+                                    <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
+                                </div>
+                                <div class="card-img-overlay">
+                                    <div class="social-icon">
+                                        <div class="py-1"> <i class="fab fa-facebook-f"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-twitter"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-instagram"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-contact position-absolute bottom-0" style="margin-left: 12px;">Contact
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-dark">Sebastian Mateo</h4>
+                            <p class="text-dark">Tour Guide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-4">
+                    <div class="shadow-lg">
+                        <div class="card">
+                            <div class="position-relative">
+                                <div class="w-100" style="height: 300px; width: 100%;">
+                                    <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
+                                </div>
+                                <div class="card-img-overlay">
+                                    <div class="social-icon">
+                                        <div class="py-1"> <i class="fab fa-facebook-f"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-twitter"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-instagram"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-contact position-absolute bottom-0" style="margin-left: 12px;">Contact
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-dark">Sebastian Mateo</h4>
+                            <p class="text-dark">Tour Guide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-4">
+                    <div class="shadow-lg">
+                        <div class="card">
+                            <div class="position-relative">
+                                <div class="w-100" style="height: 300px; width: 100%;">
+                                    <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
+                                </div>
+                                <div class="card-img-overlay">
+                                    <div class="social-icon">
+                                        <div class="py-1"> <i class="fab fa-facebook-f"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-twitter"></i></div>
+                                        <div class="py-1"> <i class="fa-brands fa-instagram"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-contact position-absolute bottom-0" style="margin-left: 12px;">Contact
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="text-dark">Sebastian Mateo</h4>
+                            <p class="text-dark">Tour Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-section">
         <div class="container">
@@ -649,49 +696,25 @@
         </div>
     </footer>
 
+    <!-- jquery 3.6.0 (Must be loaded first) -->
+    <script src="js/jquery.min.js"></script>
 
-    <!-- bootstrap 5 main.js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <!-- custom js -->
-    <script>
-        // nav scroll start
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $(".nav-container").addClass("scrolled");
-                console.log("OK");
-            } else {
-                $(".nav-container").removeClass("scrolled");
-            }
-        });
-        // nav scroll end
-        // nav-link indicator star
-        document.addEventListener("DOMContentLoaded", function () {
-            const links = document.querySelectorAll(".nav-link");
-            let currentUrl = window.location.pathname.split("/").pop();
+    <!-- bootstrap 5 main.js (Depends on jQuery) -->
+    <script src="js/bootstrap.js"></script>
 
-            // If no specific page is provided, default to "index.html"
-            if (currentUrl === "") {
-                currentUrl = "index.html";
-            }
+    <!-- slick slider js -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
-            links.forEach((link) => {
-                const linkUrl = link.getAttribute("href");
-                if (
-                    linkUrl === currentUrl ||
-                    (linkUrl === "/" && currentUrl === "index.html")
-                ) {
-                    link.classList.add("active");
-                } else {
-                    link.classList.remove("active");
-                }
-            });
-        });
+    <!-- gsap -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
 
-        // nav-link indicator end
+    <!-- gsap custom js -->
+    <script src="js/gsap.js"></script>
 
-    </script>
+    <!-- custom css -->
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -3,73 +3,11 @@
     Author: Nanoit
     Version: 1.0
     Created: 2024-10-06
-    Description: This is a digital agency website template. */
+    Description: This is a Tourventure Responsive HTML template. */
 
 @media only screen and (max-width: 1800px) {
-  /* hero section start */
-  #about-section {
-    padding-top: 180px;
-    padding-bottom: 120px;
-  }
-
-  #counter_up {
-    padding: 120px 0;
-  }
-
-  #team {
-    padding: 120px 0;
-  }
-
-  #service-section {
-    padding: 100px 0;
-  }
-
-  #our_clients {
-    padding-bottom: 120px;
-  }
-
-  #projects {
-    padding: 120px 0;
-  }
-  #testimonial {
-    padding: 120px 0;
-  }
-
-  #contact {
-    padding: 120px 0;
-  }
-  #footer {
-    padding-top: 120px;
-    padding-bottom: 20px;
-  }
-
-  #hero-section .floating-img-fast {
-    height: 480px;
-    width: 300px;
-  }
-  #hero-section .floating-img-delay {
-    height: 550px;
-    margin-left: 230px;
-  }
-
-  /* faq end */
 }
 @media only screen and (max-width: 1600px) {
-  /* hero section start */
-
-  #hero-section .floating-img-fast {
-    height: 450px;
-    width: 280px;
-  }
-  #hero-section .floating-img-delay {
-    height: 500px;
-    margin-left: 230px;
-  }
-
-  #about-section {
-    padding-top: 180px;
-    padding-bottom: 120px;
-  }
 }
 @media only screen and (max-width: 1400px) {
   h1 {
@@ -78,76 +16,6 @@
   h2 {
     font-size: 60px;
   }
-
-  /* all sections padding and margin  start*/
-  #hero-section {
-    padding: 40px 0;
-    height: auto;
-  }
-
-  #about-section {
-    padding-top: 180px;
-    padding-bottom: 100px;
-  }
-
-  #counter_up {
-    padding: 100px 0;
-  }
-
-  #team {
-    padding: 100px 0;
-  }
-
-  #service-section {
-    padding: 100px 0;
-  }
-
-  #our_clients {
-    padding-bottom: 100px;
-  }
-
-  #projects {
-    padding: 100px 0;
-  }
-  #testimonial {
-    padding: 100px 0;
-  }
-
-  #contact {
-    padding: 100px 0;
-  }
-  #footer {
-    padding-top: 100px;
-    padding-bottom: 20px;
-  }
-  /* all sections padding and margin end  */
-
-  /* hero section start */
-
-  #hero-section .floating-img-fast {
-    height: 400px;
-    width: 260px;
-  }
-  #hero-section .floating-img-delay {
-    height: 450px;
-    margin-left: 220px;
-  }
-  /* hero section end */
-  /* about section start */
-  #about-section .about-img-fast {
-    height: 300px;
-    width: 300px;
-  }
-  #about-section .about-img-delay {
-    height: 300px;
-    width: 300px;
-    margin-top: 150px;
-    margin-left: 150px;
-  }
-  #about-section .about-title {
-    font-size: 60px;
-  }
-  /* about section end */
 }
 @media only screen and (max-width: 1199px) {
   h1 {
@@ -155,92 +23,6 @@
   }
   h2 {
     font-size: 52px;
-  }
-
-  /* all sections padding and margin  start*/
-  #hero-section {
-    padding: 20px 0;
-    height: auto;
-  }
-  #about-section {
-    padding-top: 150px;
-    padding-bottom: 80px;
-  }
-
-  #counter_up {
-    padding: 80px 0;
-  }
-
-  #team {
-    padding: 80px 0;
-  }
-
-  #service-section {
-    padding: 80px 0;
-  }
-
-  #our_clients {
-    padding-bottom: 80px;
-  }
-
-  #projects {
-    padding: 80px 0;
-  }
-  #testimonial {
-    padding: 80px 0;
-  }
-
-  #contact {
-    padding: 80px 0;
-  }
-  #footer {
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-  /* all sections padding and margin end  */
-
-  /* hero section start */
-
-  #hero-section .floating-img-fast {
-    height: 400px;
-    width: 250px;
-  }
-  #hero-section .floating-img-delay {
-    height: 450px;
-    margin-left: 180px;
-  }
-
-  #hero-section .hero-description {
-    margin-top: 20px;
-  }
-
-  #hero-section .floating-img-delay {
-    margin-top: 50px;
-    margin-left: 0px;
-    height: 450px;
-  }
-
-  #contact .contact-main-title {
-    width: 50%;
-  }
-
-  /* hero section end */
-  /* about section start */
-  #about-section .about-img-fast {
-    height: 300px;
-    width: 300px;
-  }
-  #about-section .about-img-delay {
-    height: 300px;
-    width: 300px;
-    margin-top: 150px;
-    margin-left: 150px;
-  }
-
-  /* about section end */
-  .contact-main-title {
-    width: 50%;
-    font-size: 36px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -257,118 +39,28 @@
     font-size: 16px;
   }
 
-  /* all sections padding and margin  start*/
-  #hero-section {
-    padding: 10px 0;
-    height: auto;
-  }
-
-  #about-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  #counter_up {
-    padding: 60px 0;
-  }
-
-  #team {
-    padding: 60px 0;
-  }
-
-  #service-section {
-    padding: 60px 0;
-  }
-
-  #our_clients {
-    padding-bottom: 60px;
-  }
-
-  #projects {
-    padding: 60px 0;
-  }
-
-  #projects .projects-slider .content-box .slider-content {
-    padding: 24px 100px;
-  }
-
-  #testimonial {
-    padding: 60px 0;
-  }
-
-  #contact {
-    padding: 60px 0;
-  }
-  #footer {
-    padding-top: 60px;
+  header .nav-container {
+    width: 100%;
+    position: fixed;
+    padding-top: 10px;
     padding-bottom: 20px;
-  }
-  /* all sections padding and margin end  */
-
-  /* header section start */
-
-  #hero-section .floating-img-fast {
-    height: 400px;
-    width: 250px;
-  }
-  #hero-section .floating-img-delay {
-    height: 450px;
-    margin-left: 180px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 9999;
+    background-color: white;
   }
 
-  .header .nav {
-    background-color: var(--bg_white);
-  }
-  .header .navbar .navbar-brand {
-    color: var(--text_dark);
-  }
-  .header .navbar .navbar-nav .nav-link {
-    color: var(--text_dark);
-    font-size: 18px;
-  }
-  /* header section end */
-
-  /* about section start */
-  #about-section .about-floating-img {
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #about-section .sub-title {
-    margin-top: 0px;
-  }
-  /* about section end */
-
-  /* projects section start */
-  #projects .projects-slider .content-box .project-img {
-    height: 300px;
-    /* margin-bottom: 80px; */
-  }
-  #projects .projects-slider .content-box .project-content {
-    width: 250px;
-    height: 180px;
-    /* margin-right: 50px; */
+  header .nav-container .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
   }
 
-  #projects .prev-arrow {
-    left: -5%;
-    /* margin-top: -70px; */
+  header .nav-container .navbar-nav .nav-link.active {
+    border-bottom: 2px solid red;
+    color: rgb(0, 0, 0);
   }
 
-  #projects .next-arrow {
-    right: -5%;
-    /* margin-top: -70px; */
-  }
-  /* projects section end */
-
-  #testimonial .testimonial-main-title {
-    width: 70%;
-    color: #faf8f8;
-  }
-
-  #contact .contact-main-title {
-    width: 80%;
+  header .nav-container .navbar-light .navbar-brand {
+    color: #000000;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -378,143 +70,8 @@
   h2 {
     font-size: 36px;
   }
-
-  #hero-section .floating-img-fast {
-    height: 400px;
-    width: 250px;
-  }
-  #hero-section .floating-img-delay {
-    height: 450px;
-    margin-left: 30px;
-  }
-
-  #about-section .about-floating-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #projects .projects-slider .content-box .slider-content {
-    padding: 24px 24px;
-  }
-
-  #team .team-card {
-    max-width: 350px;
-  }
 }
 @media only screen and (max-width: 575px) {
-  /* all sections padding and margin  start*/
-  #hero-section {
-    padding: 0px 0;
-    height: auto;
-  }
-
-  #about-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  #counter_up {
-    padding: 40px 0;
-  }
-
-  #team {
-    padding: 40px 0;
-  }
-
-  #service-section {
-    padding: 40px 0;
-  }
-
-  #our_clients {
-    padding-bottom: 40px;
-  }
-
-  #projects {
-    padding: 40px 0;
-  }
-  #testimonial {
-    padding: 40px 0;
-  }
-
-  #contact {
-    padding: 40px 0;
-  }
-  #footer {
-    padding-top: 40px;
-    padding-bottom: 10px;
-  }
-  /* all sections padding and margin end  */
-
-  #about-section .about-img-fast {
-    height: 250px;
-    width: 250px;
-  }
-  #about-section .about-img-delay {
-    height: 250px;
-    width: 250px;
-    margin-top: 160px;
-    margin-left: 100px;
-  }
-  #about-section .about-floating-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* projects section start */
-  #projects .projects-slider .content-box .project-content {
-    margin-right: 30px;
-  }
-  /* projects section end */
-
-  #testimonial .testimonial-main-title {
-    width: 90%;
-    color: #faf8f8;
-  }
 }
 @media only screen and (max-width: 375px) {
-  #about-section .about-img-fast {
-    height: 250px;
-    width: 250px;
-  }
-  #about-section .about-img-delay {
-    height: 250px;
-    width: 250px;
-    margin-top: 160px;
-    margin-left: 100px;
-  }
-
-  #about-section .about-floating-img {
-    padding-top: 120px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-}
-
-/* Lightbox Styles */
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .lightbox-container {
-    width: 95%;
-    /* Adjust the container width on smaller screens */
-  }
-
-  .lightbox-close {
-    font-size: 1.5rem;
-    /* Adjust close button size */
-  }
-}
-
-@media (max-width: 480px) {
-  .lightbox-container {
-    width: 90%;
-    /* Full width on smaller mobile devices */
-  }
-
-  .lightbox-close {
-    font-size: 1.2rem;
-  }
 }
