@@ -55,12 +55,9 @@
 
 
     <style>
+        /* hero section */
         .image-container {
             position: relative;
-            /* width: 300px; */
-            /* Set the desired width */
-            /* height: 200px; */
-            /* Set the desired height */
             overflow: hidden;
         }
 
@@ -68,7 +65,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Ensure the image covers the entire container */
         }
 
         .image-container::before {
@@ -79,11 +75,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            /* Black overlay with 50% opacity */
-            /* Optional: gradient overlay */
-            /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
             z-index: 1;
-            /* Place the overlay above the image */
         }
 
         .image-container img {
@@ -93,200 +85,6 @@
         }
     </style>
 
-    <style>
-        ul {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .footer-section {
-            background: #151414;
-            position: relative;
-        }
-
-        .footer-cta {
-            border-bottom: 1px solid #373636;
-        }
-
-        .single-cta i {
-            color: #ff5e14;
-            font-size: 30px;
-            float: left;
-            margin-top: 8px;
-        }
-
-        .cta-text {
-            padding-left: 15px;
-            display: inline-block;
-        }
-
-        .cta-text h4 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .cta-text span {
-            color: #757575;
-            font-size: 15px;
-        }
-
-        .footer-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .footer-pattern img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 330px;
-            background-size: cover;
-            background-position: 100% 100%;
-        }
-
-        .footer-logo {
-            margin-bottom: 30px;
-        }
-
-        .footer-logo img {
-            max-width: 200px;
-        }
-
-        .footer-text p {
-            margin-bottom: 14px;
-            font-size: 14px;
-            color: #7e7e7e;
-            line-height: 28px;
-        }
-
-        .footer-social-icon span {
-            color: #fff;
-            display: block;
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 20px;
-        }
-
-        .footer-social-icon a {
-            color: #fff;
-            font-size: 16px;
-            margin-right: 15px;
-        }
-
-        .footer-social-icon i {
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            line-height: 38px;
-            border-radius: 50%;
-        }
-
-        .facebook-bg {
-            background: #3B5998;
-        }
-
-        .twitter-bg {
-            background: #55ACEE;
-        }
-
-        .google-bg {
-            background: #DD4B39;
-        }
-
-        .footer-widget-heading h3 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .footer-widget-heading h3::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -15px;
-            height: 2px;
-            width: 50px;
-            background: #ff5e14;
-        }
-
-        .footer-widget ul li {
-            display: inline-block;
-            float: left;
-            width: 50%;
-            margin-bottom: 12px;
-        }
-
-        .footer-widget ul li a:hover {
-            color: #ff5e14;
-        }
-
-        .footer-widget ul li a {
-            color: #878787;
-            text-transform: capitalize;
-        }
-
-        .subscribe-form {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .subscribe-form input {
-            width: 100%;
-            padding: 14px 28px;
-            background: #2E2E2E;
-            border: 1px solid #2E2E2E;
-            color: #fff;
-        }
-
-        .subscribe-form button {
-            position: absolute;
-            right: 0;
-            background: #ff5e14;
-            padding: 13px 20px;
-            border: 1px solid #ff5e14;
-            top: 0;
-        }
-
-        .subscribe-form button i {
-            color: #fff;
-            font-size: 22px;
-            transform: rotate(-6deg);
-        }
-
-        .copyright-area {
-            background: #202020;
-            padding: 25px 0;
-        }
-
-        .copyright-text p {
-            margin: 0;
-            font-size: 14px;
-            color: #878787;
-        }
-
-        .copyright-text p a {
-            color: #ff5e14;
-        }
-
-        .footer-menu li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        .footer-menu li:hover a {
-            color: #ff5e14;
-        }
-
-        .footer-menu li a {
-            font-size: 14px;
-            color: #878787;
-        }
-    </style>
 </head>
 
 <body>
@@ -392,11 +190,10 @@
         </div>
     </section>
 
-
     <section id="why-choose-us">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 mb-xl-0">
                     <div class="card py-4 h-100">
                         <div class="mx-auto">
                             <img src="images/icons/guide.png" class="img-fluid" style="height: 70px; width: 70px;"
@@ -407,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 mb-xl-0">
                     <div class="card py-4 h-100">
                         <div class="mx-auto">
                             <img src="images/icons/trust.png" class="img-fluid" style="height: 70px; width: 70px;"
@@ -418,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 mb-xl-0">
                     <div class="card py-4 h-100">
                         <div class="mx-auto">
                             <img src="images/icons/mentor.png" class="img-fluid" style="height: 70px; width: 70px;"
@@ -429,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 mb-xl-0">
                     <div class="card py-4 h-100">
                         <div class="mx-auto">
                             <img src="images/icons/happy.png" class="img-fluid" style="height: 70px; width: 70px;"
@@ -443,72 +240,16 @@
             </div>
         </div>
     </section>
-    <style>
-        #tour-guide {
-            padding: 120px 0;
-        }
 
-        #tour-guide .card {
-            position: relative;
-            overflow: hidden;
-            border: none;
-        }
-
-        #tour-guide .card-img-top {
-            width: 100%;
-            height: auto;
-        }
-
-        #tour-guide .card-img-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transition: background 0.3s ease;
-            padding-left: 90%;
-            background: rgba(0, 0, 0, 0.4);
-            opacity: 0;
-        }
-
-        #tour-guide .card:hover .card-img-overlay {
-            opacity: 1;
-        }
-
-        #tour-guide .btn-contact {
-            background-color: #fff;
-            border: none;
-            color: #333;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        #tour-guide .social-icon {
-            font-size: 24px;
-            color: #fff;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            opacity: 0;
-            transform: translateX(100%);
-        }
-
-        #tour-guide .card:hover .social-icon {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    </style>
-    <section id="tour-guide" style="padding: 120px 0;">
+    <section id="tour-guide">
+        <h3 class="text-center mb-4">Tour Guide</h3>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-xl-4">
+                <div class="col-sm-6 col-md-6 col-xl-4 mb-4 mb-xl-0">
                     <div class="shadow-lg">
                         <div class="card">
                             <div class="position-relative">
-                                <div class="w-100" style="height: 300px; width: 100%;">
+                                <div class="w-100" style="height: 250px; width: 100%;">
                                     <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
                                 </div>
                                 <div class="card-img-overlay">
@@ -523,16 +264,16 @@
                             </div>
                         </div>
                         <div class="p-3">
-                            <h4 class="text-dark">Sebastian Mateo</h4>
-                            <p class="text-dark">Tour Guide</p>
+                            <h4 class="text-center text-dark">Sebastian Mateo</h4>
+                            <p class="text-center text-dark">Tour Guide</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-xl-4">
+                <div class="col-sm-6 col-md-6 col-xl-4 mb-4 mb-xl-0">
                     <div class="shadow-lg">
                         <div class="card">
                             <div class="position-relative">
-                                <div class="w-100" style="height: 300px; width: 100%;">
+                                <div class="w-100" style="height: 250px; width: 100%;">
                                     <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
                                 </div>
                                 <div class="card-img-overlay">
@@ -547,16 +288,16 @@
                             </div>
                         </div>
                         <div class="p-3">
-                            <h4 class="text-dark">Sebastian Mateo</h4>
-                            <p class="text-dark">Tour Guide</p>
+                            <h4 class="text-center text-dark">Sebastian Mateo</h4>
+                            <p class="text-center text-dark">Tour Guide</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-xl-4">
+                <div class="col-sm-6 col-md-6 col-xl-4 mb-4 mb-xl-0">
                     <div class="shadow-lg">
                         <div class="card">
                             <div class="position-relative">
-                                <div class="w-100" style="height: 300px; width: 100%;">
+                                <div class="w-100" style="height: 250px; width: 100%;">
                                     <img src="images/hero-img.png" class="card-img-top w-100 h-100" alt="Card image">
                                 </div>
                                 <div class="card-img-overlay">
@@ -571,14 +312,419 @@
                             </div>
                         </div>
                         <div class="p-3">
-                            <h4 class="text-dark">Sebastian Mateo</h4>
-                            <p class="text-dark">Tour Guide</p>
+                            <h4 class="text-center text-dark">Sebastian Mateo</h4>
+                            <p class="text-center text-dark">Tour Guide</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <style>
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            /* overflow: hidden; */
+
+        }
+
+        .aspect-ratio-16-9 {
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+        }
+
+        .aspect-ratio-4-3 {
+            padding-bottom: 75%;
+            /* 4:3 aspect ratio */
+        }
+
+        .aspect-ratio-4-3 {
+            padding-bottom: 50%;
+            /* 4:3 aspect ratio */
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* -----light box  */
+        .lightbox-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1055;
+        }
+
+        .lightbox-nav.left {
+            left: 10px;
+        }
+
+        .lightbox-nav.right {
+            right: 10px;
+        }
+    </style>
+
+    <style>
+        .nav-link.active {
+            border-bottom: 2px solid red;
+        }
+    </style>
+
+    <section id="our-photos">
+
+        <div class="container">
+            <h2 class="text-center">Our Photos</h2>
+            <div class="d-flex justify-content-center">
+                <div class="w-75">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem soluta,
+                        cupiditate
+                        architecto nihil tempore
+                        rerum labore porro debitis molestiae, cumque quo id esse odit aut quas quae sequi tenetur
+                        iusto?
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <ul class="nav bg-info text-white">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary active" id="all-tab" data-bs-toggle="tab"
+                            data-bs-target="#all" href="#">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" id="fishing-tab" data-bs-toggle="tab"
+                            data-bs-target="#fishing" href="#">Fishing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" id="rooms-tab" data-bs-toggle="tab" data-bs-target="#rooms"
+                            href="#">Rooms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="tab-content" id="tabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="features-section my-5">
+
+                        <!-- Gallery Section -->
+                        <div class="mt-4">
+                            <div class="row g-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="image-wrapper aspect-ratio-4-3">
+                                        <img src="images/hero-img.png" class="img-fluid" alt="Image 1"
+                                            data-bs-toggle="modal" data-bs-target="#lightboxModal"
+                                            onclick="showLightbox(0)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="image-wrapper aspect-ratio-4-3">
+                                        <img src="images/world-map.png" class="img-fluid" alt="Image 2"
+                                            data-bs-toggle="modal" data-bs-target="#lightboxModal"
+                                            onclick="showLightbox(1)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="image-wrapper aspect-ratio-4-3">
+                                        <img src="images/hero-img.png" class="img-fluid" alt="Image 3"
+                                            data-bs-toggle="modal" data-bs-target="#lightboxModal"
+                                            onclick="showLightbox(2)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="image-wrapper aspect-ratio-4-3">
+                                        <img src="images/hero-img.png" class="img-fluid" alt="Image 3"
+                                            data-bs-toggle="modal" data-bs-target="#lightboxModal"
+                                            onclick="showLightbox(2)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lightbox Modal -->
+                        <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg position-relative">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="lightboxLabel">Image Title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center position-relative">
+                                        <button class="lightbox-nav left"
+                                            onclick="navigateLightbox(-1)">&#8249;</button>
+                                        <div class="image-wrapper aspect-ratio-4-3">
+                                            <img src="" id="lightboxImage" class="lightbox-img" alt="Lightbox Image">
+                                        </div>
+                                        <button class="lightbox-nav right"
+                                            onclick="navigateLightbox(1)">&#8250;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="fishing" role="tabpanel" aria-labelledby="fishing-tab">
+                    <h1>fishing</h1>
+                </div>
+                <div class="tab-pane fade" id="rooms" role="tabpanel" aria-labelledby="rooms-tab">
+                    <h1>rooms</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section my-5 d-none">
+
+
+        <!-- Gallery Section -->
+        <div class="mt-4">
+            <div class="row g-3">
+                <div class="col-sm-6 col-md-3">
+                    <div class="image-wrapper aspect-ratio-4-3">
+                        <img src="images/hero-img.png" class="img-fluid" alt="Image 1" data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal" onclick="showLightbox(0)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="image-wrapper aspect-ratio-4-3">
+                        <img src="images/world-map.png" class="img-fluid" alt="Image 2" data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal" onclick="showLightbox(1)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="image-wrapper aspect-ratio-4-3">
+                        <img src="images/hero-img.png" class="img-fluid" alt="Image 3" data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal" onclick="showLightbox(2)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="image-wrapper aspect-ratio-4-3">
+                        <img src="images/hero-img.png" class="img-fluid" alt="Image 3" data-bs-toggle="modal"
+                            data-bs-target="#lightboxModal" onclick="showLightbox(2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg position-relative">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="lightboxLabel">Image Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center position-relative">
+                        <button class="lightbox-nav left" onclick="navigateLightbox(-1)">&#8249;</button>
+                        <div class="image-wrapper aspect-ratio-4-3">
+                            <img src="" id="lightboxImage" class="lightbox-img" alt="Lightbox Image">
+                        </div>
+                        <button class="lightbox-nav right" onclick="navigateLightbox(1)">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container d-none">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="card">
+                        <img src="images/hero-img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                <div>
+                                    <div>From</div>
+                                    <p><span>$67.00</span> Per Person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="card">
+                        <img src="images/hero-img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                <div>
+                                    <div>From</div>
+                                    <p><span>$67.00</span> Per Person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="card">
+                        <img src="images/hero-img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                <div>
+                                    <div>From</div>
+                                    <p><span>$67.00</span> Per Person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 px-0">
+                    <img src="images/testimonial-img-1.jpg" alt="" class="img-fluid h-100 w-100">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 px-0">
+                    <div class="right-bg-img w-100 h-100">
+                        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                            <div class="text-center p-3 p-lg-4 p-xl-5">
+                                <h3 class="text-white">Our Top Reviews</h3>
+                                <a class="text-white" href="">Ancient Pyramids</a>
+                                <p class="text-white">
+                                    Ut posuere gravida turpis ut rhoncus. Suspendisse diam est, malesuada id mattis a,
+                                    sagittis
+                                    et quam. Sed dui odio, imperdiet ac sem etiumun, fermentum pulvinar nisi.
+                                    Suspendisse
+                                    tempus
+                                    libero quis libero posuere, eu tincidunt lectus. Cras diam massa, ornare sit. </p>
+                                <p class="text-white">
+                                    Hart Coney </p>
+                                <img src="images/user-2-100x100.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-between my-5">
+            <ul class="nav bg-info text-white">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary active" id="ten-percent-off-tab" data-bs-toggle="tab"
+                        data-bs-target="#ten-percent-off" href="#">10%</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" id="thirty-percent-off-tab" data-bs-toggle="tab"
+                        data-bs-target="#thirty-percent-off" href="#">30%</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" id="twenty-percent-off-tab" data-bs-toggle="tab"
+                        data-bs-target="#twenty-percent-off" href="#">20%</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="tabContent">
+                <div class="tab-pane fade show active" id="ten-percent-off" role="tabpanel"
+                    aria-labelledby="ten-percent-off-tab">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                            <div class="card">
+                                <img src="images/hero-img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                        <div>
+                                            <div>From</div>
+                                            <p><span>$67.00</span> Per Person</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                            <div class="card">
+                                <img src="images/hero-img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                        <div>
+                                            <div>From</div>
+                                            <p><span>$67.00</span> Per Person</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4">
+                            <div class="card">
+                                <img src="images/hero-img.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-primary" style="height: 40px;">Go somewhere</a>
+                                        <div>
+                                            <div>From</div>
+                                            <p><span>$67.00</span> Per Person</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="thirty-percent-off" role="tabpanel"
+                    aria-labelledby="thirty-percent-off-tab">
+                    <h1>30-percent-off</h1>
+                </div>
+                <div class="tab-pane fade" id="twenty-percent-off" role="tabpanel"
+                    aria-labelledby="twenty-percent-off-tab">
+                    <h1>20-percent-off</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer-section">
         <div class="container">
@@ -714,6 +860,31 @@
 
     <!-- custom css -->
     <script src="js/main.js"></script>
+    <script>
+        // Array of image data (can be expanded or modified)
+        const images = [
+            { src: "images/hero-img.png", title: "Image 1" },
+            { src: "images/world-map.png", title: "Image 2" },
+            { src: "images/hero-img.png", title: "Image 3" },
+        ];
+
+        let currentIndex = 0;
+
+        function showLightbox(index) {
+            currentIndex = index;
+            updateLightbox();
+        }
+
+        function navigateLightbox(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length; // Loop around
+            updateLightbox();
+        }
+
+        function updateLightbox() {
+            document.getElementById('lightboxImage').src = images[currentIndex].src;
+            document.getElementById('lightboxLabel').textContent = images[currentIndex].title;
+        }
+    </script>
 
 </body>
 
