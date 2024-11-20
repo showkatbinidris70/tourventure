@@ -24,6 +24,14 @@
   h2 {
     font-size: 52px;
   }
+
+  .hero-form {
+    height: 174px;
+    z-index: 9;
+    bottom: 0px;
+    padding-top: 12px;
+    background-color: var(--bg-primary);
+  }
 }
 @media only screen and (max-width: 991px) {
   h1 {
@@ -62,6 +70,9 @@
   header .nav-container .navbar-light .navbar-brand {
     color: #000000;
   }
+  #destination .destination-title-wrap {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   h1 {
@@ -72,6 +83,29 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .hero-form {
+    height: 243px;
+    z-index: 9;
+    bottom: 0px;
+    padding-top: 10px;
+    background-color: var(--bg-primary);
+  }
+  #discount .left-content h2 {
+    font-size: 80px;
+    line-height: 1em;
+    text-align: left;
+    color: #ffffff;
+    margin: 0px 0px 0px 15%;
+  }
+  #discount .left-content p {
+    font-family: Kristi;
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: 400;
+    text-align: left;
+    color: #ffcc05;
+    margin: -43px 0px 0px 0px;
+  }
 }
 @media only screen and (max-width: 375px) {
 }
