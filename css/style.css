@@ -370,6 +370,18 @@ header .navbar-toggler.collapsed .toggler-icon {
 }
 
 /* header end */
+/* breadcrumb start */
+#breadcrumb {
+  background-image: url("../images/breadcrumb-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+}
+#breadcrumb h6 a {
+  color: var(--text_primary);
+}
+/* breadcrumb end */
 /* swiper slider start */
 .swiper-container {
   width: 100%;
@@ -546,7 +558,6 @@ header .navbar-toggler.collapsed .toggler-icon {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 
 #our-photos .nav .nav-item .nav-link {
   font-size: 20px;
@@ -778,6 +789,11 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 #our-package {
   padding-top: 120px;
 }
+#our-package .discount-title {
+  font-size: 100px;
+  font-weight: 600;
+  color: #304f470e;
+}
 #our-package .tab-content .card a:hover {
   color: #304f47;
 }
@@ -791,8 +807,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 #our-package .nav .nav-item .nav-link.active {
   background-color: var(--bg-primary) !important;
   font-size: 20px;
-  height: 80px;
-  width: 80px;
   border-radius: 50%;
   border: 1px solid var(--text-primary);
   color: var(--text_white);
@@ -860,6 +874,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   text-align: left;
   color: #ffffff;
   margin: 0px 0px 0px 15%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
 }
 #discount .left-content p {
   font-family: Kristi;
@@ -869,6 +885,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   text-align: left;
   color: #ffcc05;
   margin: -43px 0px 0px 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffcc05;
 }
 #discount .right-content {
   background-image: url("../images/h1-img-9.jpg");
@@ -939,7 +957,7 @@ ul {
 }
 
 .footer-logo {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .footer-logo img {
@@ -947,8 +965,8 @@ ul {
 }
 
 .footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
+  margin-top: -10px;
+  font-size: 16px;
   color: #7e7e7e;
   line-height: 28px;
 }

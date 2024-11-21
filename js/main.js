@@ -168,3 +168,29 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+// show more item start
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".destination-country");
+  const nextButton = document.getElementById("next-section-btn");
+  const sectionsPerStep = 3; // Number of sections to show at each step
+  let currentIndex = 3; // Start after the initial 3 sections
+
+  nextButton.addEventListener("click", () => {
+    // Show the next set of sections
+    for (let i = currentIndex; i < currentIndex + sectionsPerStep; i++) {
+      if (sections[i]) {
+        sections[i].style.display = "block";
+      }
+    }
+
+    // Update the current index
+    currentIndex += sectionsPerStep;
+
+    // Remove the button when all sections are shown
+    if (currentIndex >= sections.length) {
+      nextButton.style.display = "none"; // Hide the button
+    }
+  });
+});
+// show more item end
