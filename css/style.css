@@ -842,6 +842,83 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   transform: scale(1.1); /* Scales the image on hover */
 }
 /* destination end */
+/* destination-page start */
+#destination-page {
+  padding: 120px 0;
+}
+
+#destination-page .destination-title-wrap {
+  max-width: 60%;
+}
+#destination-page .destination-title-wrap .sub-title {
+  color: var(--text_primary);
+}
+#destination-page .card .card-body a:hover {
+  color: #ff7f47;
+}
+#destination-page .card {
+  overflow: hidden; /* Ensures the image doesn't overflow outside the card */
+  transition: transform 0.3s ease-in-out;
+}
+
+#destination-page .card-img-container {
+  overflow: hidden; /* Ensures smooth scaling within the card */
+}
+
+#destination-page .card-img-container .img-overlay {
+  background-color: #304f4738;
+}
+#destination-page .card-img-container .img-overlay a {
+  padding-bottom: 40px;
+}
+#destination-page .card-img-container .img-overlay a:hover {
+  color: #ffffff;
+}
+
+#destination-page .card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+#destination-page .card:hover .card-img-top {
+  transform: scale(1.1); /* Scales the image on hover */
+}
+#destination-page .navigation .page-item .page-link {
+  padding: 10px !important;
+}
+#destination-page .pagination-wrap li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#destination-page .pagination-wrap.text-left li {
+  margin: 0 10px 0 0;
+}
+
+#destination-page .pagination-wrap li a {
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+#destination-page .pagination-wrap li a:hover {
+  background-color: red;
+  color: var(--background-color);
+  opacity: 1;
+  text-decoration: none;
+}
+
+#destination-page .pagination-wrap li a.active {
+  background-color: red;
+  border: 1px solid var(--primary-color);
+  color: var(--background-color);
+}
+/* destination-page end */
 /* blogs start */
 #blogs {
   padding-bottom: 120px;
@@ -903,6 +980,38 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   color: #303030;
   font-family: "Playfair Display", serif;
 }
+/* contact start */
+#contact {
+  padding: 120px 0;
+}
+#contact .contact-icon {
+  background-color: #304f47;
+  width: 55px;
+  height: 55px;
+}
+#contact i {
+  color: white;
+  font-size: 24px;
+}
+
+#contact .btn {
+  background-color: var(--bg-primary);
+  color: var(--bg_white);
+  border: none;
+}
+
+#contact .form-floating label {
+  color: #454141;
+}
+
+#contact .contact-main-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+/* contact end */
+
 /* footer---------------------------------------------start */
 ul {
   margin: 0px;
