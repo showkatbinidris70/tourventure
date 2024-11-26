@@ -194,3 +194,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // show more item end
+
+// hero lightbox video start
+// Showing the video with autoplay
+function revealVideo(div, video_id) {
+  var videoIframe = document.getElementById(video_id);
+  var videoSrc = videoIframe.src;
+
+  // Check if the video URL already contains a "?" (i.e., if it has any existing parameters)
+  if (videoSrc.indexOf("?") == -1) {
+    videoIframe.src = videoSrc + "?autoplay=1"; // If no parameters, start with ?
+  } else {
+    videoIframe.src = videoSrc + "&autoplay=1"; // If there are existing parameters, append with &
+  }
+
+  document.getElementById(div).style.display = "block"; // Show the video container
+}
+
+// Hiding the video and removing autoplay
+function hideVideo(div, video_id) {
+  var videoIframe = document.getElementById(video_id);
+  var videoSrc = videoIframe.src;
+
+  // Remove the "autoplay=1" part of the URL
+  var cleanedSrc = videoSrc
+    .replace("&autoplay=1", "")
+    .replace("?autoplay=1", "");
+  videoIframe.src = cleanedSrc;
+
+  document.getElementById(div).style.display = "none"; // Hide the video container
+}
+// hero lightbox video end

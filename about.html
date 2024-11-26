@@ -61,62 +61,83 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <style>
-        /* Custom styles */
-        #about-page .bg-overlay {
-            background-color: rgba(255, 0, 0, 0.4);
-            /* Semi-transparent red overlay */
+        @keyframes float {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+                transform: translatey(0px);
+            }
+
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+                transform: translatey(-20px);
+            }
+
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+                transform: translatey(0px);
+            }
         }
 
-        #about-page .play-btn {
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
+        /* ------------------------------- */
+
+        .lightbox {
+            background-color: rgba(0, 0, 0, 0.585);
+            overflow: hidden;
+            position: fixed;
+            display: none;
+            z-index: 9999;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+
+            /* padding-top: 10% !important; */
+            /* padding-bottom: 5% !important; */
         }
 
-        #about-page .img-fluid {
-            object-fit: cover;
+        /* Ensure the lightbox container centers the video */
+        .lightbox-container {
+            position: relative;
+            width: 100%;
+            max-width: 820px;
+            margin: 0 auto;
         }
 
-        #about-page h2 span {
-            font-weight: bold;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
         }
 
-        #about-page .text-muted {
-            font-size: 0.9rem;
+        /* Make iframe responsive */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: 2.5rem !important;
+            height: 100%;
+            width: 100%;
         }
 
-        #about-page .text-danger {
-            color: #f44336;
-            /* Red color for "What We Offer" */
+        /* Close Button */
+        .lightbox-close {
+            border: none;
+            background-color: transparent;
+            color: red;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            margin-left: auto;
+            z-index: 10;
         }
 
-        #about-page h2 span {
-            color: #f51111;
-            /* Match red color */
-        }
-
-        #about-page .border {
-            border: 1px solid #f51111;
-            /* Match red color */
-        }
-
-        #about-page .rounded {
-            border-radius: 8px;
-        }
-
-        #about-page img {
-            transition: transform 0.3s ease;
-        }
-
-        #about-page img:hover {
-            transform: scale(1.05);
-        }
-    </style>
-
-    <style>
-
+        /* lightbox video end */
     </style>
 </head>
 
@@ -188,10 +209,33 @@
     </section>
 
     <section id="about-page">
-        <div class="container py-5">
+
+        <div class="container">
             <div class="row align-items-center">
                 <!-- Left Section: Images -->
-                <div class="col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="w-100 text-center">
+                            <img src="images/about-g2.png" class="img-fluid w-75" alt="" srcset="">
+                        </div>
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                            <button class="play-btn d-flex justify-content-center align-items-center"
+                                onclick="revealVideo('video','youtube')" title="Play Video">
+                                <i class="fa-regular fa-circle-play" style="font-size: 60px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4" style="margin-top: -50px;">
+                        <div class="w-100"> <img src="images/about-g1.png" class="img-fluid w-100" alt="" srcset="">
+                        </div>
+                        <div class="w-100"> <img src="images/about-g3.png" class="img-fluid w-100" alt="" srcset="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0 d-none">
                     <div class="position-relative mb-3">
                         <img src="https://via.placeholder.com/500x300/ff0000/ffffff?text=Video"
                             class="img-fluid rounded-3" alt="Main video thumbnail">
@@ -202,11 +246,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="d-flex w-100 justify-content-between">
-                        <img src="https://via.placeholder.com/240x150/00ff00/ffffff?text=Image+1"
-                            class="img-fluid rounded-3 me-2" alt="Image 1">
-                        <img src="https://via.placeholder.com/240x150/0000ff/ffffff?text=Image+2"
-                            class="img-fluid rounded-3" alt="Image 2">
+                    <div class="d-flex w-100 justify-content-between gap-2">
+                        <img src="images/about-g1.png" class="img-fluid w-100 rounded-3 me-2" alt="Image 1">
+                        <img src="images/about-g3.png" class="img-fluid w-100 rounded-3" alt="Image 2">
                     </div>
                 </div>
 
@@ -231,71 +273,92 @@
                             <p>Traveler Connect</p>
                         </div>
                     </div>
-                    <p class="text-muted">
+                    <p class="text-muted pt-4">
                         Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus.
-                        Suspendisse blandit interdum. Sed pellentesque at nunc eget consectetur. Duis rutrum nisl urna.
-                        Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendisse blandit interdum.
-                        Sed pellentesque at nunc eget consectetur.
+                        Suspendissendt blandit interdum. Sed pellentesque at nunc eget consente consectetur.Duis rutrum
+                        nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt
+                        blandit interdum. Sed pellentesque at nunc consectetur.Duis rutrum nisl urna. Maecenas vel
+                        libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum. Sed
+                        pellentesque at nunc consectetur.Duis rutrum nisl urna. Maecenas vel libero faucibus nisi
+                        venenatis hendrerit a id lectus. Suspendissendt blandit interdum. Sed pellentesque at nunc
+                        consectetur.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Left Side: Text Content -->
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold mb-4">
-                            Why Package Book With <span class="text-danger">TourX Pro?</span>
-                        </h2>
-                        <div class="mb-4 border p-4 rounded">
-                            <h3 class="text-danger fw-bold mb-2">500+</h3>
-                            <h5 class="fw-bold">Awesome Tour</h5>
-                            <p class="text-muted">
-                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
-                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
-                            </p>
-                        </div>
-                        <div class="mb-4 border p-4 rounded">
-                            <h3 class="text-danger fw-bold mb-2">300+</h3>
-                            <h5 class="fw-bold">Destinations</h5>
-                            <p class="text-muted">
-                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
-                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
-                            </p>
-                        </div>
-                        <div class="border p-4 rounded">
-                            <h3 class="text-danger fw-bold mb-2">150+</h3>
-                            <h5 class="fw-bold">Mountains</h5>
-                            <p class="text-muted">
-                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
-                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
-                            </p>
-                        </div>
+        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')" style="z-index: 9999;">
+            <div class="d-flex justify-content-center align-items-center w-100" style="height: 100vh;">
+                <div class="lightbox-container">
+                    <div class="lightbox-content">
+                        <button onclick="hideVideo('video','youtube')" class="lightbox-close" data-toggle="lightbox">
+                            <i class="fa-solid fa-xmark fs-1 lightbox-close-icon"></i>
+                        </button>
                     </div>
-
-                    <!-- Right Side: Image Grid -->
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <img src="images/blog-post-1-m.jpg" alt="Tour Image 1" class="img-fluid rounded">
-                            </div>
-                            <div class="col-6">
-                                <img src="images/blog-post-1-m.jpg" alt="Tour Image 2" class="img-fluid rounded">
-                            </div>
-                            <div class="col-6">
-                                <img src="images/blog-post-1-m.jpg" alt="Tour Image 3" class="img-fluid rounded">
-                            </div>
-                            <div class="col-6">
-                                <img src="images/blog-post-1-m.jpg" alt="Tour Image 4" class="img-fluid rounded">
-                            </div>
+                    <div class="lightbox-fullscreen">
+                        <div class="popup-bg"></div>
+                        <div class="video-container">
+                            <iframe id="youtube" width="560" height="315"
+                                src="https://www.youtube.com/embed/QxWctzGPkok" title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <div class="container" style="padding-top: 120px;">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">
+                        Why Package Book With <span class="text-danger">TourX Pro?</span>
+                    </h2>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">500+</h3>
+                                <h5 class="text-danger text-nowrap">Awesome Tour</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">300+</h3>
+                                <h5 class="text-danger text-nowrap">Destinations</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">150+</h3>
+                                <h5 class="text-danger text-nowrap">Mountains</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image Grid -->
+                <div class="col-lg-6">
+                    <img src="images/about-image-group2.png" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="footer-section">

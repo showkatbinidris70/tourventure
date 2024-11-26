@@ -811,6 +811,112 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   border: 1px solid var(--text-primary);
   color: var(--text_white);
 }
+#our-package .offer-day-night {
+  margin-top: -18px;
+  background-color: #304f47;
+  color: var(--text_white);
+  /* border-radius: 50px 50px 0px 0px; */
+  clip-path: polygon(5% 0, 95% 0, 100% 99%, 0 100%);
+}
+/* package-page start */
+#package-page {
+  padding: 120px 0;
+}
+#package-page .offer-day-night {
+  margin-top: -18px;
+  background-color: #304f47;
+  color: var(--text_white);
+  /* border-radius: 50px 50px 0px 0px; */
+  clip-path: polygon(5% 0, 95% 0, 100% 99%, 0 100%);
+}
+
+#package-page .pagination-wrap li a.active {
+  background-color: #304f47;
+  border: 1px solid var(--primary-color);
+  color: var(--text_white);
+}
+
+#package-page .pagination-wrap li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#package-page .pagination-wrap.text-left li {
+  margin: 0 10px 0 0;
+}
+
+#package-page .pagination-wrap li a {
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+#package-page .pagination-wrap li a:hover {
+  background-color: #304f47;
+  color: var(--text_white);
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* package-page end */
+
+/* about page start */
+#about-page {
+  padding: 120px 0;
+}
+#about-page .bg-overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  /* Semi-transparent red overlay */
+}
+
+#about-page .play-btn {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+}
+
+#about-page .img-fluid {
+  object-fit: cover;
+}
+
+#about-page h2 span {
+  font-weight: bold;
+}
+
+#about-page .text-danger {
+  color: #f44336;
+  /* Red color for "What We Offer" */
+}
+
+#about-page h2 span {
+  color: #f51111;
+  /* Match red color */
+}
+
+#about-page .border {
+  border: 1px solid #f51111;
+  /* Match red color */
+}
+
+#about-page .rounded {
+  border-radius: 8px;
+}
+
+#about-page img {
+  transition: transform 0.3s ease;
+}
+
+#about-page img:hover {
+  /* transform: scale(1.05); */
+}
+/* about page end */
+
 /* destination start */
 #destination {
   padding-top: 190px;
@@ -907,16 +1013,15 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 #destination-page .pagination-wrap li a:hover {
-  background-color: red;
-  color: var(--background-color);
+  background-color: #304f47;
+  color: var(--text_white);
   opacity: 1;
   text-decoration: none;
 }
 
 #destination-page .pagination-wrap li a.active {
-  background-color: red;
-  border: 1px solid var(--primary-color);
-  color: var(--background-color);
+  background-color: #304f47;
+  color: var(--text_white);
 }
 /* destination-page end */
 /* blogs start */
@@ -944,6 +1049,11 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 /* blogs end */
+/* blog-page start */
+#blog-page {
+  padding: 120px 0;
+}
+/* blog-page end */
 /* discount start */
 #discount .left-content h2 {
   font-size: 200px;
