@@ -4,13 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Document</title>
+
+    <style>
+        .all-posts {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .all-posts .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .all-posts .column .card {
+            margin-top: 10px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 1200px) {
+            .all-posts .column {
+                flex: 33.33%;
+                max-width: 50%;
+            }
+        }
+
+
+        @media (max-width: 800px) {
+            .all-posts .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .all-posts .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <div class="container">
+        <div class="all-posts">
+            <div class="column">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-1-m.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Journeys Are Best Measured In New Friends</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-3-m-450x450.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Journeys Are Best Measured In New Friends</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-4-m.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">JA Lot Of Traveling Turns You Into A Storyteller</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-6-m-450x450.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">JA Lot Of Traveling Turns You Into A Storyteller</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-5-m.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Travel Makes One Modest And Opened To Ideas</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-7-m-450x452.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Travel Makes One Modest And Opened To Ideas</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
 
 
-</body>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-2-m.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Discover New Oceans By Losing Sight Of The Shore</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/blog-post-8-m-450x681.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title py-2">Discover New Oceans By Losing Sight Of The Shore</h5>
+                        </a>
+                        <div class="d-flex justify-content-between">
+                            <div class="text-secondary"><i class="fa-solid fa-calendar-days"></i> <span>February 1,
+                                    2024</span></div>
+                            <div class="text-secondary"><i class="fa-solid fa-comments"></i> <span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 </html>
